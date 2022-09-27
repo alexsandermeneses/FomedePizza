@@ -161,8 +161,8 @@
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
-            this.lblTotalEntregasFeitas = new System.Windows.Forms.Label();
-            this.lblValorEntregasFeitas = new System.Windows.Forms.Label();
+            this.lblQuantidadeEntregas = new System.Windows.Forms.Label();
+            this.lblValorEntregas = new System.Windows.Forms.Label();
             this.lblTotalGorjeta = new System.Windows.Forms.Label();
             this.lblValorTotal = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -1511,12 +1511,14 @@
             // 
             // btnCalcular
             // 
+            this.btnCalcular.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.Location = new System.Drawing.Point(773, 492);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(320, 75);
             this.btnCalcular.TabIndex = 129;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // label67
             // 
@@ -1545,7 +1547,7 @@
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(328, 48);
             this.label69.TabIndex = 132;
-            this.label69.Text = "Total de gorjetas";
+            this.label69.Text = "Total de gorjetas ganhas";
             this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label70
@@ -1558,32 +1560,32 @@
             this.label70.Text = "Valor das entregas com gorjetas";
             this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblTotalEntregasFeitas
+            // lblQuantidadeEntregas
             // 
-            this.lblTotalEntregasFeitas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalEntregasFeitas.Location = new System.Drawing.Point(743, 196);
-            this.lblTotalEntregasFeitas.Name = "lblTotalEntregasFeitas";
-            this.lblTotalEntregasFeitas.Size = new System.Drawing.Size(164, 48);
-            this.lblTotalEntregasFeitas.TabIndex = 134;
-            this.lblTotalEntregasFeitas.Text = "0";
-            this.lblTotalEntregasFeitas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblQuantidadeEntregas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantidadeEntregas.Location = new System.Drawing.Point(743, 196);
+            this.lblQuantidadeEntregas.Name = "lblQuantidadeEntregas";
+            this.lblQuantidadeEntregas.Size = new System.Drawing.Size(164, 48);
+            this.lblQuantidadeEntregas.TabIndex = 134;
+            this.lblQuantidadeEntregas.Text = "0";
+            this.lblQuantidadeEntregas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblValorEntregasFeitas
+            // lblValorEntregas
             // 
-            this.lblValorEntregasFeitas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorEntregasFeitas.Location = new System.Drawing.Point(939, 196);
-            this.lblValorEntregasFeitas.Name = "lblValorEntregasFeitas";
-            this.lblValorEntregasFeitas.Size = new System.Drawing.Size(185, 48);
-            this.lblValorEntregasFeitas.TabIndex = 135;
-            this.lblValorEntregasFeitas.Text = "0";
-            this.lblValorEntregasFeitas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblValorEntregas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorEntregas.Location = new System.Drawing.Point(939, 196);
+            this.lblValorEntregas.Name = "lblValorEntregas";
+            this.lblValorEntregas.Size = new System.Drawing.Size(185, 48);
+            this.lblValorEntregas.TabIndex = 135;
+            this.lblValorEntregas.Text = "0";
+            this.lblValorEntregas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTotalGorjeta
             // 
             this.lblTotalGorjeta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalGorjeta.Location = new System.Drawing.Point(769, 295);
             this.lblTotalGorjeta.Name = "lblTotalGorjeta";
-            this.lblTotalGorjeta.Size = new System.Drawing.Size(324, 48);
+            this.lblTotalGorjeta.Size = new System.Drawing.Size(328, 48);
             this.lblTotalGorjeta.TabIndex = 136;
             this.lblTotalGorjeta.Text = "0";
             this.lblTotalGorjeta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1605,8 +1607,8 @@
             this.ClientSize = new System.Drawing.Size(1158, 731);
             this.Controls.Add(this.lblValorTotal);
             this.Controls.Add(this.lblTotalGorjeta);
-            this.Controls.Add(this.lblValorEntregasFeitas);
-            this.Controls.Add(this.lblTotalEntregasFeitas);
+            this.Controls.Add(this.lblValorEntregas);
+            this.Controls.Add(this.lblQuantidadeEntregas);
             this.Controls.Add(this.label70);
             this.Controls.Add(this.label69);
             this.Controls.Add(this.label68);
@@ -1881,8 +1883,8 @@
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label lblTotalEntregasFeitas;
-        private System.Windows.Forms.Label lblValorEntregasFeitas;
+        private System.Windows.Forms.Label lblQuantidadeEntregas;
+        private System.Windows.Forms.Label lblValorEntregas;
         private System.Windows.Forms.Label lblTotalGorjeta;
         private System.Windows.Forms.Label lblValorTotal;
     }
