@@ -23,7 +23,12 @@ namespace controleTelepizza
                 dia14, dia15, dia16, dia17, dia18, dia19, dia20, dia21, dia22, dia23, dia24, dia25,
                 dia26, dia27, dia28, dia29, dia30, dia31, quantidadeEntregas;
 
-            decimal gorjetaDia1, valorEntregas, totalGorjetas, valorTotal;
+            decimal gorjetaDia1, gorjetaDia2, gorjetaDia3, gorjetaDia4, gorjetaDia5, gorjetaDia6,
+                gorjetaDia7, gorjetaDia8, gorjetaDia9, gorjetaDia10, gorjetaDia11, gorjetaDia12,
+                gorjetaDia13, gorjetaDia14, gorjetaDia15, gorjetaDia16, gorjetaDia17, gorjetaDia18,
+                gorjetaDia19, gorjetaDia20, gorjetaDia21, gorjetaDia22, gorjetaDia23, gorjetaDia24,
+                gorjetaDia25, gorjetaDia26, gorjetaDia27, gorjetaDia28, gorjetaDia29, gorjetaDia30,
+                gorjetaDia31, valorEntregas, totalGorjetas, valorTotal;
 
             dia1 = int.Parse(txtDia1.Text);
             dia2 = int.Parse(txtDia2.Text);
@@ -62,6 +67,7 @@ namespace controleTelepizza
                 dia22 + dia23 + dia24 + dia25 + dia26 + dia27 + dia28 + dia29 + dia30 + dia31;
 
             gorjetaDia1 = int.Parse(txtGorjetaDia1.Text);
+            txtGorjetaDia2 
 
             totalGorjetas = gorjetaDia1;
 
