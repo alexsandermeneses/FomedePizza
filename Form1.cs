@@ -102,7 +102,6 @@ namespace controleTelepizza
 
             valorEntregas = quantidadeEntregas * 0.35m;
 
-
             lblQuantidadeEntregas.Text = quantidadeEntregas.ToString();
             lblValorEntregas.Text = valorEntregas.ToString("C");
             lblTotalGorjeta.Text = totalGorjetas.ToString("C");
