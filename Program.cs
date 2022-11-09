@@ -16,7 +16,7 @@ namespace controleTelepizza
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formJaneiro2023());
+            Application.Run(new formFevereiro2023());
         }
     }
 }

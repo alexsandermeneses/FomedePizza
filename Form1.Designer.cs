@@ -1,6 +1,6 @@
 ﻿namespace controleTelepizza
 {
-    partial class formJaneiro2023
+    partial class formFevereiro2023
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -1600,11 +1600,12 @@
             this.lblValorTotal.Text = "0";
             this.lblValorTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // formJaneiro2023
+            // formFevereiro2023
             // 
+            this.AcceptButton = this.btnCalcular;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1158, 731);
+            this.ClientSize = new System.Drawing.Size(1206, 731);
             this.Controls.Add(this.lblValorTotal);
             this.Controls.Add(this.lblTotalGorjeta);
             this.Controls.Add(this.lblValorEntregas);
@@ -1742,8 +1743,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "formJaneiro2023";
-            this.Text = "Controle Telepizza";
+            this.Name = "formFevereiro2023";
+            this.Text = "Controle FomedePizza";
             this.ResumeLayout(false);
             this.PerformLayout();
 

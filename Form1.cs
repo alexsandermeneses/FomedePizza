@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace controleTelepizza
 {
-    public partial class formJaneiro2023 : Form
+    public partial class formFevereiro2023 : Form
     {
-        public formJaneiro2023()
+        public formFevereiro2023()
         {
             InitializeComponent();
         }
@@ -98,12 +98,7 @@ namespace controleTelepizza
             gorjetaDia30 = decimal.Parse(txtGorjetaDia30.Text);
             gorjetaDia31 = decimal.Parse(txtGorjetaDia31.Text);
 
-            totalGorjetas = gorjetaDia1 + gorjetaDia2 + gorjetaDia3 + gorjetaDia4 + gorjetaDia5 + 
-                gorjetaDia6 + gorjetaDia7 + gorjetaDia8 + gorjetaDia9 + gorjetaDia10 + gorjetaDia11 +
-                gorjetaDia12 + gorjetaDia13 + gorjetaDia14 + gorjetaDia15 + gorjetaDia15 + gorjetaDia16 +
-                gorjetaDia16 + gorjetaDia17 + gorjetaDia18 + gorjetaDia19 + gorjetaDia20 + gorjetaDia21 +
-                gorjetaDia22 + gorjetaDia23 + gorjetaDia24 + gorjetaDia25 + gorjetaDia26 + gorjetaDia27 + 
-                gorjetaDia28 + gorjetaDia29 + gorjetaDia30 + gorjetaDia31;
+            totalGorjetas = gorjetaDia1 + gorjetaDia2 + gorjetaDia3 + gorjetaDia4 + gorjetaDia5 +  gorjetaDia6 + gorjetaDia7 + gorjetaDia8 + gorjetaDia9 + gorjetaDia10 + gorjetaDia11 + gorjetaDia12 + gorjetaDia13 + gorjetaDia14 + gorjetaDia15 + gorjetaDia16 + gorjetaDia17 + gorjetaDia18 + gorjetaDia19 + gorjetaDia20 + gorjetaDia21 + gorjetaDia22 + gorjetaDia23 + gorjetaDia24 + gorjetaDia25 + gorjetaDia26 + gorjetaDia27 + gorjetaDia28 + gorjetaDia29 + gorjetaDia30 + gorjetaDia31;
 
             valorEntregas = quantidadeEntregas * 0.35m;
 
